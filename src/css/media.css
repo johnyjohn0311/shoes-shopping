@@ -1,0 +1,92 @@
+@media (max-width: 600px) {
+  /*the upper part of header
+  logo, social links; div*/
+  .upperHeader {
+    height: 50px;
+  }
+
+  /*button to show social links; button*/
+  .contactBtn {
+    display: block;
+  }
+
+  /*change size of all icons, img*/
+  .logo__img, .social__img,
+  .home__img, .cart__img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /*social links container; div*/
+  .contactSocial {
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    background: var(--component);
+    border: var(--bd);
+    border-radius: var(--bdr);
+    padding: 10px;
+    display: none;
+  }
+
+  .contactSocial a {
+    font-size: 18px;
+  }
+
+  /*the lower part of the header, 
+  home login signup cart; nav*/
+  .lowerHeader {
+    height: 50px;
+  }
+
+  /*menu button to display lowerheader; button*/
+  .menuBtn {
+    display: block;
+  }
+
+  /*container of navigation, 
+  home, login, signup, cart; div*/
+  .navContainer {
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: var(--bd);
+    border-radius: var(--bdr);
+    background: var(--component);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .navContainer-contactSocial {
+    display: flex;
+  }
+
+  .navLink {
+    font-size: 18px;
+  }
+
+  /*product counter. div*/
+  .product__count {
+    background: black;
+    color: white;
+    position: absolute;
+    right: -25px;
+    left: unset;
+  }
+
+  /**
+  * product display styling
+  */
+  main {
+    position: absolute;
+    top: 100px;
+    min-height: (100vh - 100px);
+  }
+}

@@ -1,0 +1,207 @@
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 10px;
+}
+
+/**
+* product show styling; section
+*/
+.productShow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 450px;
+}
+
+/*product cover container; div*/
+.productImage {
+  width: 100%;
+  height: 450px;
+  border: var(--bd);
+  border-radius: var(--bdr);
+}
+
+/*img*/
+.product__img {
+  border-radius: var(--bdr);
+}
+
+/*product scroll images; div*/
+.productScroll {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*images scrollbar; div*/
+.productScrollBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  overflow: hidden;
+}
+
+/*arrow buttons; button*/
+.scrollBtn {
+  position: absolute;
+  top: calc((80px - 30px) / 2);
+  width: 30px;
+  height: 30px;
+  border: var(--bd);
+  border-radius: var(--bdr);
+  background: rgba(255,255,255,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollBtnLeft {
+  left: 0;
+}
+
+.scrollBtnRight {
+  right: 0;
+}
+
+/*product image container at scrollbar; div*/
+.productScrollImage {
+  width: 80px;
+  min-width: 80px;
+  height: 100%;
+  border: var(--bd);
+  border-radius: var(--bdr);
+  cursor: pointer;
+}
+
+.product__subimg {
+  border-radius: var(--bdr);
+}
+
+/**
+* styling for add to cart; section
+*/
+.productAdd {
+  width: 450px;
+}
+
+/*form*/
+.productForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*product name; h2*/
+.product__name {
+  font-size: 24px;
+  font-weight: var(--font--w2);
+}
+
+/*product brand; div*/
+.product__brand {
+  font-size: 12px;
+}
+
+/*product price, product color, product size; div*/
+.product__price, .productColor, .productSize {
+  font-weight: var(--font--w1);
+}
+
+/*product color and product size container; div*/
+.productColor, .productSize {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*color selection and size Selection container; div*/
+.colorSelection, .sizeSelection {
+  display: flex;
+  gap: 5px;
+}
+
+/*button*/
+.colorBtn, .sizeBtn {
+  width: 50px;
+  height: 50px;
+  border: var(--bd);
+  border-radius: var(--bdr);
+  background: var(--component);
+}
+
+.colorBtn:hover, .sizeBtn:hover {
+  border: 1px solid black;
+}
+
+/*img*/
+.color__img {
+  border-radius: var(--bdr);
+}
+
+/*quantity; div*/
+.quantityUpdate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 100px;
+  height: 30px;
+  border: var(--bd);
+  background: var(--component);
+}
+
+.quantityUpdate input {
+  text-align: center;
+  width: 50px;
+  height: 100%;
+}
+
+/*quantity; button*/
+.quantityBtn {
+  font-weight: var(--font--w2);
+}
+
+/*add to cart; button*/
+.addBtn {
+  background: black;
+  color: white;
+  height: 50px;
+  width: 100%;
+  font-weight: var(--font--w1);
+  border-radius: var(--bdr);
+}
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 10px;
+  }
+
+  /* product show styling; section*/
+  .productShow,
+  /* styling for add to cart*/
+  .productAdd {
+    width: 100%;
+  }
+
+  /*product cover container; div*/
+  .productImage {
+    resize: horizontal;
+  }
+
+  /*form*/
+  .productForm {
+    gap: 10px;
+  }
+}

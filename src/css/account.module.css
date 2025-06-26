@@ -1,0 +1,145 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+/**
+* user profile.div
+*/
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/**
+* big title your profile. h1
+*/
+.profile__title {
+  font-size: 50px;
+  font-weight: var(--font--w2);
+}
+
+/**
+* user details container of avatar,
+* name and informations. div
+*/
+.userDetails {
+  display: flex;
+  gap: 100px;
+}
+
+/**
+* avatar, name. section
+*/
+.avatarName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/*avatar. div*/
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: var(--bd);
+  background: var(--component);
+}
+
+/**
+* name container. div
+*/
+.name {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/**
+* edit button. button
+*/
+.nameBtn {
+  width: 30px;
+  height: 30px;
+}
+
+/**
+* user information.section
+*/
+.userInfor {
+  width: 300px;
+}
+
+/*user form. form*/
+.userForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*label. label*/
+.form__label {
+  font-weight: var(--font--w1);
+}
+
+/*form input. input*/
+.form__input {
+  width: 100%;
+  height: 50px;
+  border-radius: var(--bdr);
+  border: var(--bd);
+  padding: 10px;
+}
+
+/*submit button. button*/
+.submitBtn {
+  background: black;
+  border-radius: var(--bdr);
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+
+@media (max-width: 760px) {
+  /**
+  * user details container of avatar,
+  * name and informations. div
+  */
+  .userDetails {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  #main {
+    padding: 10px;
+  }
+
+  /**
+  * user profile.div
+  */
+  .userProfile {
+    gap: 10px;
+    width: 100%;
+  }
+
+  /**
+  * big title your profile. h1
+  */
+  .profile__title {
+    font-size: 30px;
+  }
+
+  /**
+  * user information.section
+  */
+  .userInfor {
+    width: 100%;
+  }
+}

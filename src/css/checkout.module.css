@@ -1,0 +1,228 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 20px;
+}
+
+/**
+* big title. h1
+*/
+.title__h1 {
+  font-size: 50px;
+  font-weight: var(--font--w2);
+  width: calc(100% - 150px);
+}
+
+/**
+* the container of products and checkout. div
+*/
+.orders {
+  display: flex;
+  gap: 100px;
+}
+
+/**
+* list of products. div
+*/
+.orderItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*checkbox. input*/
+.item__checkBox {
+  width: 20px;
+  height: 20px;
+  border: var(--bd);
+  border-radius: var(--bdr);
+  cursor: pointer;
+}
+
+/*an item. div*/
+.orderItem {
+  display: flex;
+  gap: 10px;
+}
+
+/*item's image. div*/
+.itemImage {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--bdr);
+  border: var(--bd);
+}
+
+/*item img. img*/
+.item__img {
+  border-radius: var(--bdr);
+}
+
+/*item's details. div*/
+.itemDetails {
+  display: flex;
+  gap: 10px;
+}
+
+/*item's description, name, quantity, color, delete. div*/
+.itemDescription {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: var(--font--w1);
+}
+
+/*item's name. p*/ 
+.item__name {
+  font-size: 24px;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+/*quantity; div*/
+.quantityUpdate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 100px;
+  height: 30px;
+  border: var(--bd);
+  background: var(--component);
+}
+
+.quantityUpdate input {
+  text-align: center;
+  width: 50px;
+  height: 100%;
+}
+
+/*quantity; button*/
+.quantityBtn {
+  font-weight: var(--font--w2);
+}
+
+/*delete item button. button*/
+.item__delete__btn {
+  width: fit-content;
+  font-weight: var(--font--w1);
+}
+
+/*item's price. div*/
+.item__price {
+  font-weight: var(--font--w1);
+  font-size: 24px;
+}
+
+/**
+* order summary. div
+*/
+.orderSummary {
+  background: var(--component);
+  border: var(--bd);
+  border-radius: var(--bdr);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  width: 350px;
+  height: fit-content;
+  font-weight: var(--font--w1);
+}
+
+/*order summary title. h2*/
+.order__summary__title {
+  font-size: 24px;
+}
+
+/*order's term. div*/
+.orderTerm {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*checkout button. button*/
+.checkoutBtn {
+  background: black;
+  border-radius: var(--bdr);
+  color: white;
+  font-weight: var(--font--w1);
+  height: 50px;
+}
+
+@media (max-width: 1050px) {
+  /**
+  * the container of products and checkout. div
+  */
+  .orders {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 760px) {
+  /*item's image. div*/
+  .itemImage {
+    min-width: 100px;
+    width: 100px;
+    min-height: 100px;
+    height: 100px;
+  }
+
+  /*item's details. div*/
+  .itemDetails {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  /**
+  * big title. h1
+  */
+  .title__h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  /*an item. div*/
+  .orderItem {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /*item's description, name, quantity, color, delete. div*/
+  .itemDescription {
+    font-weight: normal;
+    width: unset;
+  }
+
+  /*item's name. p*/ 
+  .item__name {
+    font-size: 18px;
+    font-weight: var(--font--w1);
+    max-height: 80px;
+  }
+
+  /**
+  * order summary. div
+  */
+  .orderSummary {
+    width: 100%;
+  }
+
+  /*item's price. div*/
+  .item__price {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+}

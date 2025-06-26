@@ -1,0 +1,192 @@
+/**
+*big title men's trainers & shoes; h1
+*/
+.title__h1 {
+  font-size: 50px;
+  font-weight: var(--font--w2);
+  padding: 20px 10px;
+}
+
+/**
+*filter and arrange container; div
+*/
+.filterArrange {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  background: var(--component);
+  border-bottom: var(--bd);
+  border-top: var(--bd);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/*filter and arrange button; button*/
+.filterBtn, .arrangeBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/*filter icon and down arrow icon; img*/
+.filter__img, .downarr__img {
+  width: 30px;
+  height: 30px;
+}
+
+/**
+* products styling
+*/
+.productSlides {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+/*product card; div*/
+.productCard {
+  width: calc((100%- 60px) / 3);
+  min-width: calc((100% - 60px) / 3);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--bdr);
+  border: var(--bd);
+  background: var(--component);
+}
+
+/*product image container; div*/
+.productImage {
+  width: 100%;
+  height: 435px;
+  border-radius: var(--bdr);
+  border-bottom: var(--bd);
+}
+
+/*img*/
+.product__image {
+  border-radius: var(--bdr);
+}
+
+/*product description; div*/
+.productDescription {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*product name, product price; div*/
+.product__name, .product__price {
+  width: 100%;
+  font-size: 24px;
+  font-weight: var(--font--w1);
+}
+
+.product__name {
+  max-height: 90px;
+  overflow: hidden;
+}
+
+/*product brand; div*/
+.product__brand {
+  width: 100%;
+  font-size: 12px;
+}
+
+/**
+* pagination styling
+*/
+.pagination {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*page button; button*/
+.pageBtn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--bd);
+  border-radius: var(--bdr);
+}
+
+@media (min-width: 1500px) {
+  /*product card; div*/
+  .productCard {
+    width: calc((100% - 80px) / 4);
+    min-width: calc((100% - 80px) / 4);
+  }
+}
+
+@media (max-width: 1024px) {
+  /**
+  * products styling
+  */
+  .productSlides {
+    overflow: scroll;
+  }
+
+  /*product card; div*/
+  .productCard {
+    width: 435px;
+    min-width: 435px;
+  }
+}
+
+@media (max-width: 600px) {
+  /*big title men's trainers & shoes; h1*/
+  .title__h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  /**
+  *filter and arrange container; div
+  */
+  .filterArrange {
+    height: 30px;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*filter and arrange button; button*/
+  .filterBtn, .arrangeBtn {
+    font-size: var(--font--size);
+  }
+
+  /*filter icon and down arrow icon; img*/
+  .filter__img, .downarr__img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /**
+  * products styling
+  */
+  .productSlides {
+    gap: 10px;
+    padding-left: 10px;
+  }
+
+  /*product card; div*/
+  .productCard {
+    width: 300px;
+    min-width: 300px;
+  }
+
+  /*product image container; div*/
+  .productImage {
+    height: 300px;
+  }
+}
